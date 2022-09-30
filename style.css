@@ -1,0 +1,185 @@
+:root {
+  --bg_main: #0c6396;
+  --text_light: #fff;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+
+body {
+  height: 100vh;
+  background-image: url(https://www.pratikbilgisi.com/upload/stblog/1/23/22/2322large.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  position: relative;
+}
+.form-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(1, 0, 6, 1) 51%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+}
+.image {
+  padding-left: 1rem;
+}
+.header a {
+  text-decoration: none;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+}
+h1 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+form {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  display: flex;
+  justify-content: center;
+  border: 0.01px solid rgba(0, 0, 0, 0.144);
+  border-radius: 10px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.452);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.473);
+  /* width: 70rem; */
+}
+
+form i {
+  padding-left: 0.8rem;
+}
+input {
+  width: 30vw;
+  padding: 0.75rem;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.007);
+  margin: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.568);
+  font-size: 1rem;
+}
+.warning {
+  margin-bottom: -6rem;
+  max-width: 450px;
+  color: red;
+  min-height: 40px;
+  position: relative;
+  left: -16rem;
+  top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+}
+
+.result-area {
+  margin: 70px 20px;
+  position: absolute;
+  top: 22%;
+  left: 35%;
+}
+
+.result-area .cities {
+  display: flex;
+  gap: 30px 20px;
+  flex-wrap: nowrap;
+}
+
+.result-area .city {
+  padding: 40px 30px;
+  background-color: white;
+  color: var(--text_med);
+  border-radius: 20px;
+  /* position: relative; */
+}
+
+.result-area figcaption {
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.result-area .city-temp {
+  margin-top: 10px;
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--text_dark);
+}
+
+.result-area .city sup {
+  font-size: 0.5em;
+}
+
+.result-area .city-name sup {
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  color: var(--text_light);
+  background-color: var(--orange);
+}
+
+.result-area .city-icon {
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .cities {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .result-area {
+    margin-top: 20px;
+  }
+  .cities {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

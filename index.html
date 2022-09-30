@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:ital,wght@1,600&family=Roboto&family=Sorts+Mill+Goudy:ital@1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/aes.js"></script>
+    <script src="./js/Extention.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="image">
+            <img src="http://store-images.s-microsoft.com/image/apps.17264.9007199266306075.9a5a5480-3a2a-4ca0-a611-37ee3a5713bd.85deeb2e-0125-4a3a-9517-4d9488f4f48a"
+                alt="AccuWeather" width="30px">
+        </div>
+        <a href="">
+            <h1>AccuWeather</h1>
+        </a>
+    </div>
+    <div class="form-section">
+        <form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="" placeholder="Search for a city" autofocus>
+            <span class="warning"></span>
+        </form>
+    </div>
+    <div class="result-area">
+        <div class="container">
+            <ul class="cities">
+            </ul>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
